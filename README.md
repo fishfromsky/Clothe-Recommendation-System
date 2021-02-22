@@ -13,3 +13,6 @@ MCN相关模型信息：
   year={2019}
 }
 ```
+## 数据集下载
+数据集信息：**Polyvore-T** datasets based on [Polyvore](https://github.com/xthan/polyvore-dataset).
+使用：解压数据集后将image文件夹放置于data文件夹下
