@@ -27,6 +27,7 @@
               <img :src="clothe_data.bag.src" style="width: 100%; height: 100%; border-radius: 10px">
             </div>
           </div>
+          <div v-else class="null-img"></div>
         </div>
         <div class="option-title">
           <i class="el-icon-s-opportunity" style="color: #4ab7bd; margin-left: 10px"></i>
@@ -51,6 +52,7 @@
               <img :src="new_clothe_data.bag.src" style="width: 100%; height: 100%; border-radius: 10px">
             </div>
           </div>
+          <div v-else class="null-img"></div>
         </div>
         <div class="score-box" v-if="hasNewClothe">
           <i class="el-icon-s-claim" style="color: rgb(64, 158, 255); margin-left: 40px"></i>
@@ -180,6 +182,7 @@ export default {
     width: 90%;
     margin-left: 5%;
     min-height: 300px;
+    padding-bottom: 40px;
   }
   .option-title{
     width: 100%;
@@ -196,6 +199,10 @@ export default {
   .clothe-box{
     width: 100%;
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .clothe-box-container{
     width: 100%;
@@ -253,5 +260,13 @@ export default {
     font-weight: bold;
     color: #666;
     margin-left: 10px;
+  }
+  .null-img{
+    width: 230px;
+    height: 150px;
+    background: url('/static/image/null.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 </style>
